@@ -1,0 +1,105 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2B2D31;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo del contenedor */
+.container {
+    width: fit-content;
+    height: fit-content;
+    background-color: #313338;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Estilo de los títulos */
+h1 {
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+/* Estilo del formulario */
+form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 24px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de mensaje de error */
+.error {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+/* Estilo de la página de bienvenida */
+.welcome-page {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Estilo de la página de bienvenida - título */
+.welcome-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de la página de bienvenida - mensaje */
+.welcome-message {
+    color: #555;
+}

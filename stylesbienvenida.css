@@ -1,0 +1,39 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2B2D31;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la página de bienvenida */
+.welcome-page {
+    text-align: center;
+    background-color: #4caf50; /* Color de fondo verde */
+    color: #fff; /* Color del texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Estilo del título de bienvenida */
+.welcome-title {
+    font-size: 28px; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+}
+
+/* Estilo del mensaje de bienvenida */
+.welcome-message {
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
