@@ -1,22 +1,22 @@
 // Elementos del DOM
-const body = document.body;
-const modeSelect = document.getElementById("modeSelect");
-const modeForm = document.getElementById("modeForm");
+const container = document.querySelector(".container");
+const themeToggle = document.getElementById("themeToggle");
 
-// Función para cambiar el modo
-function cambiarModo() {
-    const selectedMode = modeSelect.value;
-
-    if (selectedMode === "dark") {
+// Función para cambiar el tema
+function cambiarTema() {
+    if (themeToggle.checked) {
         // Modo Oscuro
-        body.style.backgroundColor = "#333";
-        body.style.color = "#fff";
+        container.classList.remove("light");
+        container.classList.add("dark");
     } else {
         // Modo Claro (por defecto)
-        body.style.backgroundColor = "#fff";
-        body.style.color = "#333";
+        container.classList.remove("dark");
+        container.classList.add("light");
     }
 }
 
-// Agregar un evento de escucha al formulario de selección de modo
-modeForm.addEventListener("change", cambiarModo);
+// Agregar un evento de escucha al toggle de tema
+themeToggle.addEventListener("change", cambiarTema);
+
+// Llamar a la función inicialmente para establecer el tema predeterminado
+cambiarTema();

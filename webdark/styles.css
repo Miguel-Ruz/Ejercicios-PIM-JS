@@ -9,7 +9,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
     margin: 20px auto;
 }
 
@@ -17,16 +17,108 @@ h1 {
     color: #333;
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-    text-align: left;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
+.switch input { 
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.plan h2 {
+    color: #333;
+}
+
+.plan .price {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Estilo del contenido en modo claro */
+.container.light {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo del contenido en modo oscuro */
+.container.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Cambiar el color de todas las letras en modo oscuro */
+.container.dark * {
+    color: #fff;
+}
+
+/* Estilo de los planes en modo claro */
+.plan.light {
+    background-color: #f9f9f9;
+}
+
+/* Estilo de los planes en modo oscuro (color más claro que el fondo del contenedor) */
+.container.dark .plan {
+    background-color: #7f7f7f3c; /* Puedes ajustar el color según tu preferencia */
 }
