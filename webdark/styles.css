@@ -1,16 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     transition: background-color 0.5s, color 0.5s;
+    margin: 0;
 }
 
 .container {
+    width: 100%;
+    height: 100vh;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 800px;
-    margin: 20px auto;
+    margin: 0;
+}
+
+.switch-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
 h1 {
@@ -62,8 +76,11 @@ input:checked + .slider:before {
 
 .plans {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 12%;
 }
 
 .plan {
@@ -71,19 +88,36 @@ input:checked + .slider:before {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    text-align: center;
-    width: 30%;
+    text-align: left;
+    width: 32%;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .plan h2 {
     color: #333;
+    font-size: 36px;
 }
 
 .plan .price {
     font-size: 24px;
+    font-weight: bold;
     margin: 10px 0;
-    color: #333;
+    color: #33333374;
+}
+
+.button-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    color: #282828;
+    padding: 16px 20px;
+    background-color: transparent;
+    border: 2px solid #e7e7e9;
+    border-radius: 10px;
+    margin-bottom: 32px;
 }
 
 .plan ul {
