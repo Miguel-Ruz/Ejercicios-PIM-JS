@@ -1,41 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #32275c;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 32px;
+    font-size: 39px;
+    font-weight: bold;
 }
 
 #question-container {
     margin-bottom: 20px;
 }
 
+#question-text {
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
 #answer-input {
+    padding: 18px 20px;
+    margin: 0;
+    border: 2px solid #e7e7e9;
+    border-radius: 12px;
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 14px;
+    color: #0d0c22;
 }
 
 #submit-button {
-    background-color: #2196F3;
+    background-color: #5d21f3;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 18px;
     margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+#submit-button:hover {
+    background-color: #370e9f;
 }
 
 #result-text {
@@ -52,5 +85,5 @@ h1 {
 
 #effectiveness {
     font-weight: bold;
-    color: #2196F3;
+    color: #5d21f3;
 }
