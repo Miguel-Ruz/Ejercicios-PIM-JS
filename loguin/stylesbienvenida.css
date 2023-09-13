@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
     background-color: #2B2D31;
     margin: 0;
@@ -21,8 +20,8 @@ html{
 /* Estilo de la página de bienvenida */
 .welcome-page {
     text-align: center;
-    background-color: #4caf50; /* Color de fondo verde */
-    color: #fff; /* Color del texto blanco */
+    background-color: #4caf50; 
+    color: #fff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -32,11 +31,11 @@ html{
 
 /* Estilo del título de bienvenida */
 .welcome-title {
-    font-size: 28px; /* Tamaño de fuente más grande */
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 /* Estilo del mensaje de bienvenida */
 .welcome-message {
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 18px; 
 }

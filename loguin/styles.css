@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
     background-color: #FFFFFF;
     margin: 0;
@@ -121,14 +120,14 @@ button:hover {
     background-color: #363636;
 }
 
-/* Estilo de mensaje de error */
+/* Mensaje de error */
 .error {
     color: red;
     margin-top: 10px;
     margin-bottom: 24px;
 }
 
-/* Estilo de la página de bienvenida */
+/* Página de bienvenida */
 .welcome-page {
     text-align: center;
     background-color: #f0f0f0;
@@ -139,14 +138,14 @@ button:hover {
     margin: 20px auto;
 }
 
-/* Estilo de la página de bienvenida - título */
+/* Página de bienvenida - título */
 .welcome-title {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Estilo de la página de bienvenida - mensaje */
+/* Página de bienvenida - mensaje */
 .welcome-message {
     color: #555;
 }
