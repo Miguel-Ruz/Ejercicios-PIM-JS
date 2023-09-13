@@ -15,8 +15,8 @@ function cambiarTema() {
     }
 }
 
-// Agregar un evento de escucha al toggle de tema
+// Evento de escucha al toggle de tema
 themeToggle.addEventListener("change", cambiarTema);
 
-// Llamar a la función inicialmente para establecer el tema predeterminado
+// Llamar a la función inicial para establecer el tema predeterminado
 cambiarTema();

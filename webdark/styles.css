@@ -152,7 +152,7 @@ input:checked + .slider:before {
     background-color: #f9f9f9;
 }
 
-/* Estilo de los planes en modo oscuro (color más claro que el fondo del contenedor) */
+/* Estilo de los planes en modo oscuro */
 .container.dark .plan {
-    background-color: #7f7f7f3c; /* Puedes ajustar el color según tu preferencia */
+    background-color: #7f7f7f3c;
 }
